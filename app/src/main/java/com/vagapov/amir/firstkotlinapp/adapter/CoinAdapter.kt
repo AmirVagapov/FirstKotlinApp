@@ -14,6 +14,7 @@ class CoinAdapter : RecyclerView.Adapter<MyViewHolder>()
         set(value){
             field = value
             notifyDataSetChanged()
+            ///comment for branch 1.0
         }
 
     fun newMethodToVersionOne() {
