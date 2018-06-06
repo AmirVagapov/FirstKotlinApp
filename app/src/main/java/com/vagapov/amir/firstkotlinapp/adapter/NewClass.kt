@@ -6,5 +6,7 @@ package com.vagapov.amir.firstkotlinapp.adapter
 class NewClass {
 
 
-    fun metho9d(){}
+    fun metho9d(){
+        //enter the code
+    }
 }
