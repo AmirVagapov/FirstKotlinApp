@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit
 object ServerGenerator {
 
     private val BASE_URL: String = "https://api.coinmarketcap.com/v1/"
+
     private val httpClient : OkHttpClient = OkHttpClient.Builder()
             .connectTimeout(10, TimeUnit.SECONDS)
             .readTimeout(10, TimeUnit.SECONDS)
@@ -25,6 +26,6 @@ object ServerGenerator {
 
     private val serverApi : ServerApi = retrofit.create(ServerApi::class.java)
 
-    fun getApi() :ServerApi = serverApi
+    fun getApi() = serverApi
 
 }

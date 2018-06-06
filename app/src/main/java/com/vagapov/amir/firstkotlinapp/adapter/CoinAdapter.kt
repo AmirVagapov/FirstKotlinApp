@@ -22,14 +22,14 @@ class CoinAdapter : RecyclerView.Adapter<MyViewHolder>()
             holder.view.tvName.text=coin.name
             holder.view.tvSymbol.text=coin.symbol
             holder.view.tvPrice.text="$${coin.price_usd}"
-            holder.view.tvPriceChange.text=if(coin.percent_change_24h > 0)
+            holder.view.tvPriceChange.text= if(coin.percent_change_24h > 0)
                 "+${coin.percent_change_24h}"
             else
                 "${coin.percent_change_24h}%"
         }
     }
 
-    override fun getItemCount(): Int = data?.size?:0
+    override fun getItemCount(): Int = data?.size?: 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_coin, parent, false))
