@@ -16,6 +16,10 @@ class CoinAdapter : RecyclerView.Adapter<MyViewHolder>()
             notifyDataSetChanged()
         }
 
+    fun newMethodToVersionOne() {
+
+    }
+
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         data?.get(position)?.let {
             coin ->
